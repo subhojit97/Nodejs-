@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(255, 0, 0, 0.724);
+            padding: 27px;
+            font-size: 21px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('partials/nav.ejs')%>
+    <h1>first html</h1>
+
+    <form action="/about" method="POST">
+        <label for="name" >Name</label>
+        <input type="text" name="name" id="name" value='<%=qs.name%>'>
+        <br>
+        <label for="job" >Job</label>
+        <input type="text" name="job" id="job" value='<%=qs.job%>'>
+        <br>
+        <label for="email" >Email</label>
+        <input type="email" name="email" id="email" value=''>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- <p>
+      Job :  <%=qs.job%>
+       
+    </p>
+    <p>
+        Name: <%=qs.name%>
+    </p> -->
+    
+</body>
+</html>

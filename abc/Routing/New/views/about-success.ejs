@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(52, 207, 0, 0.724);
+            padding: 27px;
+            font-size: 21px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('partials/nav.ejs')%>
+    <h1>first html</h1>
+    <h2>Success Page</h2>
+
+    <p>
+        This is about <%= data.name %>
+    </p>
+    <p>
+        he is a <%= data.job %>
+    </p>
+    <p>
+        Contact <%= data.email %>
+    </p>
+
+
+
+   
+    
+    
+</body>
+</html>
